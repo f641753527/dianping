@@ -71,7 +71,7 @@ module.exports = {
             }
         }),
         new webpack.DefinePlugin({
-            __NODE_ENV__: JSON.stringify(process.env.NODE_ENV)
+            __NODE_ENV__: '"production"'
         }),
         new ExtractTextPlugin({
             filename: 'css/index-[hash:6].css',
